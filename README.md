@@ -10,6 +10,9 @@
   <a href="https://npmjs.org/package/@tiaanduplessis/freezo">
     <img src="https://img.shields.io/npm/v/@tiaanduplessis/freezo.svg?style=flat-square" alt="npm package version" />
   </a>
+  <a href="https://codecov.io/gh/tiaanduplessis/freezo">
+  <img src="https://codecov.io/gh/tiaanduplessis/freezo/branch/master/graph/badge.svg?style=flat-square" alt="Codecov" />
+</a>
   <a href="https://npmjs.org/package/@tiaanduplessis/freezo">
   <img src="https://img.shields.io/npm/dm/@tiaanduplessis/freezo.svg?style=flat-square" alt="npm downloads" />
   </a>
