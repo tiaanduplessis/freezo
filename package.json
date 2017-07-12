@@ -1,0 +1,44 @@
+{
+  "name": "@tiaanduplessis/freezo",
+  "version": "1.0.0",
+  "description": "Deeply freeze/thaw a array or object",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/freezo",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/freezo",
+  "bugs": "https://github.com/tiaanduplessis/freezo",
+  "main": "dist/freezo.js",
+  "browser": "dist/freezo.js",
+  "jsnext:main": "dist/freezo.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "jest",
+    "test:cov": "npm run test -- --coverage",
+    "lint": "standard 'src/**/*.js'",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "bili --format es --format umd --compress",
+    "start": "npm run test",
+    "pretest": "npm run format && npm run lint:fix",
+    "format": "prettier --print-width 100 --semi false --single-quote --write 'src/**/*.js'",
+    "precommit": "npm test",
+    "prepublish": "npm run build",
+    "release": "npm test && git commit -am $npm_package_version && git tag $npm_package_version && git push --tags && npm publish"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [["env"]]
+  },
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "standard": "^10.0.2",
+    "babel-preset-env": "^1.6.0",
+    "bili": "^0.17.3",
+    "husky": "^0.14.3",
+    "prettier": "~1.5.2"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/"
+  }
+}
