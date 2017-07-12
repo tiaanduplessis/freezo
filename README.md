@@ -61,16 +61,16 @@
 ## Install
 
 ```sh
-$ npm install freezo
+$ npm install @tiaanduplessis/freezo
 # OR
-$ yarn add freezo
+$ yarn add @tiaanduplessis/freezo
 ```
 
 ## Usage
 
 ```js
 
-import { freeze, thaw } from 'freezo'
+import { freeze, thaw } from '@tiaanduplessis/freezo'
 
 const frozenArr = freeze([1, 2, 3, { foo: 1, bar: 2 }, 5])
 const frozenObj = freeze({ foo: 1, bar: 2, baz: { foo: 1, bar: 2 } })
