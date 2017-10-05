@@ -60,6 +60,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/freezo.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install @tiaanduplessis/freezo
 # OR
